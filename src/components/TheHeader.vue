@@ -1,11 +1,32 @@
 <template>
     <header class="header">
-        Headers
+        
     </header>
+    <div>
+
+
+        <div 
+            v-for="obj in todos"
+            v-bind:key="obj.id"
+        
+        >
+            {{ obj.title }}
+        </div>
+        
+
+    </div>
+
 </template>
 
-<script>
+<script> 
     export default{
+        name: 'App',
+        data() {
+            return {
+               
+            }
+        }
+    
 
     }
 </script>
